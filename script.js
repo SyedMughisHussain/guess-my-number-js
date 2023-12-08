@@ -22,6 +22,11 @@ const correct_Guess = function(randomNumber) {
 const checkNumber = function() {
     const random_number = randomNumber();
     let value = guess_Number.value;
+    const normal = +normal_score.innerHTML;
+    console.log(normal);
+    if(normal<=1){
+        againBtn();
+    }
     console.log(value);
     console.log(random_number);
     if(random_number == value){
